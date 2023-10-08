@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>login page</title>
+</head>
+<body>
+<style>
+body {
+  background-image: url('10.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+input[type=email],select{
+width:100%;
+padding:12px 20px;
+margin:8px 0px
+displey:inline-block;
+border:1px solid #ccc
+border-radius:4px;
+box-sizing:border-box;
+}
+
+input[type=password],select{
+width:100%;
+padding:12px 20px;
+margin:8px 0px
+displey:inline-block;
+border:1px solid #ccc
+border-radius:4px;
+box-sizing:border-box;
+}
+
+
+input[type=submit],{
+width:100%;
+background-color:#4cAF50;
+color:white;
+padding:14px 20px;
+margin:8px 0px;
+border:none;
+border-radius:4px;
+cursor:poiter;
+}
+
+input[type=submit]:hover{
+background-color:aqua;
+}
+
+div{
+background-color:gray;
+width:300px;
+padding:50px;
+margin:20x;
+
+}
+</style>
+<center>
+<img src="10.jpg" width="200" height="200">
+<div>
+<h1 style="color:gold;">LOGIN PAGE</h1>
+
+<form>
+<b><I><lable >UserName:</lable><br>
+<input type="Email"id="email"name="Email"><br>
+<br>
+<lable1>Password:</lable1><br>
+
+  <input type="Password" id="myInput" name="pwd"
+  pattern="(?=.*\d)(?=/*[a-z])(?=/*[A-Z]).{10}"
+title="use atleast 1 upper case, lower case, numbers, specal charactor" size="10">
+<input type="checkbox"onclick="myFunction()">show password
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+
+}
+</script><br>
+<br></b></i>
+<input type="submit"value="submit"><br>
+</form>
+<br>
+<a href="default.asp"target="_blank">forget password</a><br>
+</div>
+</center>
+</body>
+</html>
